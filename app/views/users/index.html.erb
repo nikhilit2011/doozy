@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<form action="<%= users_login_path%>" method='post'>
+<table>
+<tr>
+<td>
+<label id="email_label">email:</label>
+</td>
+<td>
+<input type="text" id="email" name="email" />
+</td>
+</tr>
+<tr>
+<td>
+<label id="password_label">password:</label>
+</td>
+<td>
+<input type="password" id="password" name="password" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit"/>
+</td>
+</tr>
+</table>
+</form>
+
+<%= link_to 'New User', new_user_path %>
